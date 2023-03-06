@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--  
+====================================================================== 
+Example WSDL for Florecom Commercial Use Cases for the actor CUSTOMER
+======================================================================
+Please follow the instructions in this file to implement your own web service.
+	
+	Schema agency:	FLORECOM
+	Schema version:	1p5
+	Schema date:		July 26, 2012
+	Author:					HvR 
+	
+	Copyright (C) FLORECOM (2012). All Rights Reserved.
+======================================================================
+-->
+<definitions xmlns:tns="http://webservice.florecom.org/CommercialCustomer" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:defs="http://webservices.florecom.org/Commercial/PortDefinitions" xmlns="http://schemas.xmlsoap.org/wsdl/" name="CommercialCustomer" targetNamespace="http://webservice.florecom.org/CommercialCustomer">
+	<import namespace="http://webservices.florecom.org/Commercial/PortDefinitions" location="[[CUSTOM_URL]]commercial_1p5.wsdl"/>
+	<binding name="CommercialCustomer" type="defs:CommercialCustomerPorts">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetSupply">
+			<soap:operation soapAction="http://webservices.florecom.org/commercial/customer/GetSupply_0p7" style="document"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="Errorlist">
+				<soap:fault name="Errorlist" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="PutOrder">
+			<soap:operation soapAction="http://webservices.florecom.org/commercial/customer/PutOrder_0p7" style="document"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="Errorlist">
+				<soap:fault name="Errorlist" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="CommercialCustomer">
+		<documentation>Florecom Commercial Use Cases applicable to Customers</documentation>
+		<port name="MyCommercialCustomerPort" binding="tns:CommercialCustomer">
+			<soap:address location="http://MYWEBSERVICEURL"/>
+		</port>
+	</service>
+	<!--IMPORT: Import of Florecom's message and port definitions. This import is mandatory i.e. do not alter!-->
+	<!-- STEP 1: Remove the SOAP operations that you did not implement-->
+	<!-- STEP 2: Change [MYWEBSERVICEURL] to the URL of your webservice-->
+</definitions>
