@@ -37,7 +37,7 @@
 	<!-- =================================================================== -->
 	<!-- ===== Imports of Code Lists                                   ===== -->
 	<!-- =================================================================== -->
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:standard:6:Recommendation20:4" schemaLocation="https://vanderhoek.github.io/FEC_MeasurementUnitCommonCode_4.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:standard:6:Recommendation20:4" schemaLocation="https://vanderhoek.io/FEC_MeasurementUnitCommonCode_4.xsd"/>
 	<!-- =================================================================== -->
 	<!-- ===== Type Definitions                                        ===== -->
 	<!-- =================================================================== -->

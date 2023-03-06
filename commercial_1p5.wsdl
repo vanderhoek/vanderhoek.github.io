@@ -20,8 +20,8 @@ visit http://sdk.florecom.org
 =============================================================================
 -->
 <definitions xmlns:tns="http://webservices.florecom.org/Commercial/PortDefinitions" xmlns:asm="urn:fec:florecom:xml:data:draft:SupplyStandardMessage:7" xmlns:osm="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7" xmlns:feram="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservices.florecom.org/Commercial/PortDefinitions">
-	<import namespace="urn:fec:florecom:xml:data:draft:SupplyStandardMessage:7" location="https://vanderhoek.github.io/Supply_0p7.xsd"/>
-	<import namespace="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7" location="https://vanderhoek.github.io/Order_0p7.xsd"/>
+	<import namespace="urn:fec:florecom:xml:data:draft:SupplyStandardMessage:7" location="https://vanderhoek.io/Supply_0p7.xsd"/>
+	<import namespace="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7" location="https://vanderhoek.io/Order_0p7.xsd"/>
 	<message name="SupplyRequest">
 		<part name="body" element="asm:SupplyRequest"/>
 	</message>

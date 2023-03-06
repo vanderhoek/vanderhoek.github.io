@@ -26,19 +26,19 @@ Sierteelt Supply
 	<!-- =================================================================================== -->
 	<!-- =====  Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
 	<!-- ===================================================================================-->
-	<xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:4" schemaLocation="https://vanderhoek.github.io/UnqualifiedDataType_4p0.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:4" schemaLocation="https://vanderhoek.io/UnqualifiedDataType_4p0.xsd"/>
 	<!-- ======================================================================= -->
 	<!-- ===== Import of Qualified DataType Schema Module                  ===== -->
 	<!-- ======================================================================= -->
-	<xsd:import namespace="urn:un:unece:uncefact:data:standard:QualifiedDataType:7" schemaLocation="https://vanderhoek.github.io/QualifiedDataType_7p0.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:QualifiedDataType:7" schemaLocation="https://vanderhoek.io/QualifiedDataType_7p0.xsd"/>
 	<!-- ================================================================================== -->
 	<!-- ===== Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
 	<!-- ================================================================================== -->
-	<xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3" schemaLocation="https://vanderhoek.github.io/ReusableAggregateBusinessInformationEntity_3p0.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3" schemaLocation="https://vanderhoek.io/ReusableAggregateBusinessInformationEntity_3p0.xsd"/>
 	<!-- ====================================================================================== -->
 	<!-- ===== Import of FEC Reusable Aggregate Business Information Entity Schema Module ===== -->
 	<!-- ====================================================================================== -->
-	<xsd:import namespace="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6" schemaLocation="https://vanderhoek.github.io/FEC_ReusableAggregateBusinessInformationEntity_6p0.xsd"/>
+	<xsd:import namespace="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6" schemaLocation="https://vanderhoek.io/FEC_ReusableAggregateBusinessInformationEntity_6p0.xsd"/>
 	<!-- ======================================================================= -->
 	<!-- =====  Element Declarations                                       ===== -->
 	<!-- ======================================================================= -->

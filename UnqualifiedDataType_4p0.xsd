@@ -48,13 +48,13 @@ elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.0">
 	<!-- =================================================================== -->
 	<!-- ===== Imports of Code Lists                                   ===== -->
 	<!-- =================================================================== -->
-	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2007-05-14" schemaLocation="https://vanderhoek.github.io/IANA_CharacterSetCode_20070514.xsd"/>
-	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:IANA:MIMEMediaType:2007-07-09" schemaLocation="https://vanderhoek.github.io/IANA_MIMEMediaType_20070709.xsd"/>
-	<xsd:import namespace="urn:un:unece:uncefact:identifierlist:standard:5:ISO316612A:SecondEdition2006" schemaLocation="https://vanderhoek.github.io/ISO_ISOTwoletterCountryCode_SecondEdition2006.xsd"/>
-	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2007-06-18" schemaLocation="https://vanderhoek.github.io/ISO_ISO3AlphaCurrencyCode_20070618.xsd"/>
-	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:6:0133:20061205" schemaLocation="https://vanderhoek.github.io/UNECE_CharacterSetEncodingCode_20061205.xsd"/>
-	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:6:Recommendation20:4" schemaLocation="https://vanderhoek.github.io/UNECE_MeasurementUnitCommonCode_4.xsd"/>
-	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:6:3055:D07A" schemaLocation="https://vanderhoek.github.io/UNECE_AgencyIdentificationCode_D07A.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2007-05-14" schemaLocation="https://vanderhoek.io/IANA_CharacterSetCode_20070514.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:IANA:MIMEMediaType:2007-07-09" schemaLocation="https://vanderhoek.io/IANA_MIMEMediaType_20070709.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:identifierlist:standard:5:ISO316612A:SecondEdition2006" schemaLocation="https://vanderhoek.io/ISO_ISOTwoletterCountryCode_SecondEdition2006.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2007-06-18" schemaLocation="https://vanderhoek.io/ISO_ISO3AlphaCurrencyCode_20070618.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:6:0133:20061205" schemaLocation="https://vanderhoek.io/UNECE_CharacterSetEncodingCode_20061205.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:6:Recommendation20:4" schemaLocation="https://vanderhoek.io/UNECE_MeasurementUnitCommonCode_4.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:codelist:standard:6:3055:D07A" schemaLocation="https://vanderhoek.io/UNECE_AgencyIdentificationCode_D07A.xsd"/>
 	<!-- =================================================================== -->
 	<!-- ===== Type Definitions                                        ===== -->
 	<!-- =================================================================== -->

@@ -33,16 +33,16 @@ Copyright (C) Florecom (2011). All Rights Reserved.
 	<!-- ======================================================================= -->
 	<!-- ===== Imports of Code Lists                                 ===== -->
 	<!-- ======================================================================= -->
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:StatusReason:1:0" schemaLocation="https://vanderhoek.github.io/FEC_StatusReasoncode_1.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:StatusCondition:2:0" schemaLocation="https://vanderhoek.github.io/FEC_StatusConditioncode_2.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:TradeCondition:2:0" schemaLocation="https://vanderhoek.github.io/FEC_TradeConditioncode_2.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:MarketForm:2:0" schemaLocation="https://vanderhoek.github.io/FEC_MarketFormcode_2.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:TradeItem:1:0" schemaLocation="https://vanderhoek.github.io/FEC_TradeItemcode_1.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:PositionUsage:1:0" schemaLocation="https://vanderhoek.github.io/FEC_PositionUsagecode_1.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:ImageCategory:1:0" schemaLocation="https://vanderhoek.github.io/FEC_ImageCategorycode_1.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:ImageSubject:1:0" schemaLocation="https://vanderhoek.github.io/FEC_ImageSubjectcode_1.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:TotalType:2:0" schemaLocation="https://vanderhoek.github.io/FEC_TotalTypecode_2.xsd"/>
-	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:Placement:1:0" schemaLocation="https://vanderhoek.github.io/FEC_Placementcode_1.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:StatusReason:1:0" schemaLocation="https://vanderhoek.io/FEC_StatusReasoncode_1.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:StatusCondition:2:0" schemaLocation="https://vanderhoek.io/FEC_StatusConditioncode_2.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:TradeCondition:2:0" schemaLocation="https://vanderhoek.io/FEC_TradeConditioncode_2.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:MarketForm:2:0" schemaLocation="https://vanderhoek.io/FEC_MarketFormcode_2.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:TradeItem:1:0" schemaLocation="https://vanderhoek.io/FEC_TradeItemcode_1.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:PositionUsage:1:0" schemaLocation="https://vanderhoek.io/FEC_PositionUsagecode_1.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:ImageCategory:1:0" schemaLocation="https://vanderhoek.io/FEC_ImageCategorycode_1.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:ImageSubject:1:0" schemaLocation="https://vanderhoek.io/FEC_ImageSubjectcode_1.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:TotalType:2:0" schemaLocation="https://vanderhoek.io/FEC_TotalTypecode_2.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:codelist:draft:Placement:1:0" schemaLocation="https://vanderhoek.io/FEC_Placementcode_1.xsd"/>
 	<!-- ================================================================== -->
 	<!-- ===== Type Definitions                                       ===== -->
 	<!-- ================================================================== -->

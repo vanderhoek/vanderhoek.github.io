@@ -80,23 +80,23 @@ Copyright (C) Florecom (2011). All Rights Reserved.
 	<!-- ======================================================================= -->
 	<!-- =====  Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
 	<!-- ======================================================================= -->
-	<xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3" schemaLocation="https://vanderhoek.github.io/ReusableAggregateBusinessInformationEntity_3p0.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3" schemaLocation="https://vanderhoek.io/ReusableAggregateBusinessInformationEntity_3p0.xsd"/>
 	<!-- ======================================================================= -->
 	<!-- ===== Import of Florecom Unqualified DataType Schema Module                ===== -->
 	<!-- ======================================================================= -->
-	<xsd:import namespace="urn:fc:florecom:xml:data:draft:UnqualifiedDataType:1" schemaLocation="https://vanderhoek.github.io/FEC_UnqualifiedDataType_1p0.xsd"/>
+	<xsd:import namespace="urn:fc:florecom:xml:data:draft:UnqualifiedDataType:1" schemaLocation="https://vanderhoek.io/FEC_UnqualifiedDataType_1p0.xsd"/>
 	<!-- ======================================================================= -->
 	<!-- ===== Import of Unqualified DataType Schema Module                ===== -->
 	<!-- ======================================================================= -->
-	<xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:4" schemaLocation="https://vanderhoek.github.io/UnqualifiedDataType_4p0.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:4" schemaLocation="https://vanderhoek.io/UnqualifiedDataType_4p0.xsd"/>
 	<!-- ======================================================================= -->
 	<!-- ===== Import of Qualified DataType Schema Module                  ===== -->
 	<!-- ======================================================================= -->
-	<xsd:import namespace="urn:un:unece:uncefact:data:standard:QualifiedDataType:7" schemaLocation="https://vanderhoek.github.io/QualifiedDataType_7p0.xsd"/>
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:QualifiedDataType:7" schemaLocation="https://vanderhoek.io/QualifiedDataType_7p0.xsd"/>
 	<!-- ======================================================================= -->
 	<!-- ===== Import of Florecom Qualified DataType Schema Module                  ===== -->
 	<!-- ======================================================================= -->
-	<xsd:import namespace="urn:fec:florecom:xml:data:draft:QualifiedDataType:7" schemaLocation="https://vanderhoek.github.io/FEC_QualifiedDataType_7p0.xsd"/>
+	<xsd:import namespace="urn:fec:florecom:xml:data:draft:QualifiedDataType:7" schemaLocation="https://vanderhoek.io/FEC_QualifiedDataType_7p0.xsd"/>
 	<!-- ======================================================================= -->
 	<!-- ===== Element Declarations                                        ===== -->
 	<!-- ======================================================================= -->

@@ -14,7 +14,7 @@ Please follow the instructions in this file to implement your own web service.
 ======================================================================
 -->
 <definitions xmlns:tns="http://webservice.florecom.org/CommercialCustomer" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:defs="http://webservices.florecom.org/Commercial/PortDefinitions" xmlns="http://schemas.xmlsoap.org/wsdl/" name="CommercialCustomer" targetNamespace="http://webservice.florecom.org/CommercialCustomer">
-	<import namespace="http://webservices.florecom.org/Commercial/PortDefinitions" location="https://vanderhoek.github.io/commercial_1p5.wsdl"/>
+	<import namespace="http://webservices.florecom.org/Commercial/PortDefinitions" location="https://vanderhoek.io/commercial_1p5.wsdl"/>
 	<binding name="CommercialCustomer" type="defs:CommercialCustomerPorts">
 		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
 		<operation name="GetSupply">
