@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2007 (http://www.altova.com) by Hans van Rossen (Agritect) -->
+<!--
+=============================================================================
+Webservice Description (messages and ports) for Florecom Commercial Use Cases
+=============================================================================
+This file must be imported by an actor specific WSDL that implements the
+commercial use cases for a specific actor. For all documentation, please
+visit http://sdk.florecom.org
+
+  Schema agency:	FLORECOM
+  Schema version:	1.5
+  Schema date:		July 26, 2012
+  Author:				H. van Rossen
+
+  Copyright (C) FLORECOM (2012). All Rights Reserved.
+
+20120507 HvR Update to Supply v7, Order v7
+20120726 HvR Added soap fault support
+=============================================================================
+-->
+<definitions xmlns:tns="http://webservices.florecom.org/Commercial/PortDefinitions" xmlns:asm="urn:fec:florecom:xml:data:draft:SupplyStandardMessage:7" xmlns:osm="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7" xmlns:feram="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservices.florecom.org/Commercial/PortDefinitions">
+	<import namespace="urn:fec:florecom:xml:data:draft:SupplyStandardMessage:7" location="https://vanderhoek.github.io/Supply_0p7.xsd"/>
+	<import namespace="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7" location="https://vanderhoek.github.io/Order_0p7.xsd"/>
+	<message name="SupplyRequest">
+		<part name="body" element="asm:SupplyRequest"/>
+	</message>
+	<message name="SupplyResponse">
+		<part name="body" element="asm:SupplyResponse"/>
+	</message>
+	<message name="PutSupplyRequest">
+		<part name="body" element="asm:PutSupplyRequest"/>
+	</message>
+	<message name="PutSupplyResponse">
+		<part name="body" element="asm:PutSupplyResponse"/>
+	</message>
+	<message name="OrderRequest">
+		<part name="parameter" element="osm:PutOrderRequest"/>
+	</message>
+	<message name="OrderResponse">
+		<part name="parameter" element="osm:PutOrderResponse"/>
+	</message>
+	<message name="SoapFault">
+		<part name="body" element="feram:Errorlist"/>
+	</message>
+	<portType name="CommercialCustomerPorts">
+		<operation name="GetSupply">
+			<input message="tns:SupplyRequest"/>
+			<output message="tns:SupplyResponse"/>
+			<fault name="Errorlist" message="tns:SoapFault"/>
+		</operation>
+		<operation name="PutOrder">
+			<input message="tns:OrderRequest"/>
+			<output message="tns:OrderResponse"/>
+			<fault name="Errorlist" message="tns:SoapFault"/>
+		</operation>
+	</portType>
+	<portType name="CommercialSupplierPorts">
+		<operation name="PutSupply">
+			<input message="tns:PutSupplyRequest"/>
+			<output message="tns:PutSupplyResponse"/>
+			<fault name="Errorlist" message="tns:SoapFault"/>
+		</operation>
+	</portType>
+	<!--IMPORT FLORECOM XML LIBRARY-->
+	<!--MESSAGES-->
+	<!--CUSTOMER PORTS-->
+	<!--SUPPLIER PORTS-->
+
+</definitions>

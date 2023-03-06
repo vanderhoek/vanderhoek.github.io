@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =========================================================================== -->
+<!-- ===== StatusReasoncode - Code List Schema Module                                 ===== -->
+<!-- =========================================================================== -->
+<!--
+  	Schema agency:		Florecom
+	Schema version:		1.0
+	Schema date: 		14 oktober 2008
+
+	Code list name: 	Status Code
+	Code list agency: 	FEC	
+ 	Code list version:	1
+  	  	
+  	Copyright (C) Florecom (2008). All Rights Reserved.
+
+	Status codes for dutch floriculture use
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clmFECStatusReason10="urn:fc:florecom:xml:codelist:draft:StatusReason:1:0" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:fc:florecom:xml:codelist:draft:StatusReason:1:0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2:0">
+	<!-- =================================================================== -->
+	<!-- ===== Element Declarations                                    ===== -->
+	<!-- =================================================================== -->
+	<!-- ===== Root Element                                            ===== -->
+	<!-- =================================================================== -->
+	<xsd:element name="StatusReasonCode" type="clmFECStatusReason10:StatusReasonCodeContentType"/>
+	<!-- =================================================================== -->
+	<!-- ===== Type Definitions                                        ===== -->
+	<!-- =================================================================== -->
+	<!-- ===== Type Definition: Measurement Unit Common Code Content Type  ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="StatusReasonCodeContentType">
+		<xsd:restriction base="xsd:token">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="3"/>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Departure delay</ccts:Name>
+						<ccts:Description>The transport has been delayed in departing on the arranged transport action.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="23">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Equipment failure</ccts:Name>
+						<ccts:Description>Delivery/collection could not be effected due to equipment failure.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="30">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Incorrect address</ccts:Name>
+						<ccts:Description>The address given for the action was incorrect.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="43">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Package not ready</ccts:Name>
+						<ccts:Description>The package was not available for collection.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="56">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Totally missing</ccts:Name>
+						<ccts:Description>The total goods/consignments/equipment is missing.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="57">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Tracking information unavailable</ccts:Name>
+						<ccts:Description>The tracking information of the goods/consignments/equipment is unavailable.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="62">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Unknown</ccts:Name>
+						<ccts:Description>The reason is unknown</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="66">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Stolen</ccts:Name>
+						<ccts:Description>A consignment or goods have been stolen.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>			
+		</xsd:simpleType>
+</xsd:schema>

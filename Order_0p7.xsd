@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 (http://www.altova.com) by Hans van Rossen (Agritect) -->
+<!-- ====================================================================== -->
+<!-- =====  Order Schema Module                                       ===== -->
+<!-- ====================================================================== -->
+<!--
+Schema agency:   Florecom
+Schema version:  0.7
+Schema date:     7 mei 2012
+
+Copyright (C) Florecom (2012). All Rights Reserved.
+
+Sierteelt Order / OrderResponse
+
+20090811 HvR Imported new FEC library RABIE 1p3
+20100113 HvR OrderType | OrderTradeLineItem minOccurs from 1 to 0
+20100402 HvR Added ImageLine, Unbounded StatusType, TradeTotal see new Library RABIE3p0
+20100517 HvR Added DocumentStatus in Order/Orderesponse / Upgrade to UN QDT version 7.0
+20110510 HvR Upgrade to new Florecom Library RABIE4p0
+20120507 HvR Upgrade to new Florecom library RABIE5p0. 
+20120612 HvR Upgrade to new Florecom library RABIE6p0.
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:osm="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3" xmlns:feram="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:4" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:7" xmlns:ccts="urn:un:unece:uncefact:data:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:fec:florecom:xml:data:draft:OrderStandardMessage:7" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7">
+	<!-- ======================================================================= -->
+	<!-- =====  Imports                                                     ==== -->
+	<!-- =================================================================================== -->
+	<!-- =====  Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
+	<!-- ===================================================================================-->
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:4" schemaLocation="https://vanderhoek.github.io/UnqualifiedDataType_4p0.xsd"/>
+	<!-- ======================================================================= -->
+	<!-- ===== Import of Qualified DataType Schema Module                  ===== -->
+	<!-- ======================================================================= -->
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:QualifiedDataType:7" schemaLocation="https://vanderhoek.github.io/QualifiedDataType_7p0.xsd"/>
+	<!-- ================================================================================== -->
+	<!-- ===== Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
+	<!-- ================================================================================== -->
+	<xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:3" schemaLocation="https://vanderhoek.github.io/ReusableAggregateBusinessInformationEntity_3p0.xsd"/>
+	<!-- ====================================================================================== -->
+	<!-- ===== Import of FEC Reusable Aggregate Business Information Entity Schema Module ===== -->
+	<!-- ====================================================================================== -->
+	<xsd:import namespace="urn:fec:florecom:xml:data:draft:ReusableAggregateBusinessInformationEntity:6" schemaLocation="FEC_ReusableAggregateBusinessInformationEntity_6p0.xsd"/>
+	<!-- ======================================================================= -->
+	<!-- =====  Element Declarations                                       ===== -->
+	<!-- ======================================================================= -->
+	<!-- =====  Root Element Declarations for email                        ===== -->
+	<!-- ======================================================================= -->
+	<xsd:element name="Order" type="osm:OrderType"/>
+	<xsd:element name="OrderAcknowledge" type="osm:OrderAcknowledgementType"/>
+	<xsd:element name="OrderResponse" type="osm:OrderResponseType"/>
+	<xsd:element name="OrderResponseAcknowledge" type="osm:OrderResponseAcknowledgementType"/>
+	<!-- ======================================================================= -->
+	<!-- =====  Root Element Declarations for webservices                  ===== -->
+	<!-- ======================================================================= -->
+	<xsd:element name="PutOrderRequest" type="osm:OrderRequestMessage">
+		<xsd:annotation>
+			<xsd:documentation>Indienen order</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PutOrderResponse" type="osm:OrderResponseMessage">
+		<xsd:annotation>
+			<xsd:documentation>Order Response</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!--================================================================== -->
+	<!--=====  Type Definitions                                      ===== -->
+	<!--================================================================== -->
+	<!--=====  Type Definitions: OrderAcknowledgement                           ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="OrderAcknowledgementType">
+		<xsd:sequence>
+			<xsd:element name="OrderAcknowledge" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="ReferencedDocument" type="ram:ReferencedDocumentType"/>
+						<xsd:element name="OrderResult" type="udt:IndicatorType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--================================================================== -->
+	<!--=====  Type Definitions: OrderResponseAcknowledgement                           ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="OrderResponseAcknowledgementType">
+		<xsd:sequence>
+			<xsd:element name="OrderResponseAcknowledge" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="ReferencedDocument" type="ram:ReferencedDocumentType"/>
+						<xsd:element name="OrderResponseResult" type="udt:IndicatorType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--================================================================== -->
+	<!--=====  Type Definitions:OrderRequestType                           ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="OrderRequestType">
+		<xsd:sequence>
+			<xsd:element name="DocumentReference" type="ram:ReferencedDocumentType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--================================================================== -->
+	<!--=====  Type Definitions: OrderRequestMessage                         ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="OrderRequestMessage">
+		<xsd:sequence>
+			<xsd:element name="Header">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="UserName" type="udt:TextType" minOccurs="0"/>
+						<xsd:element name="Password" type="udt:TextType" minOccurs="0"/>
+						<xsd:element name="MessageID" type="udt:IDType"/>
+						<xsd:element name="MessageDateTime" type="udt:DateTimeType"/>
+						<xsd:element name="MessageSerial" type="udt:NumericType"/>
+						<xsd:element name="ReferencedDocument" type="ram:ReferencedDocumentType" minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Body">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="osm:Order"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--================================================================== -->
+	<!--=====  Type Definitions: OrderResponseMessage                          ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="OrderResponseMessage">
+		<xsd:sequence>
+			<xsd:element name="Body">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="osm:OrderResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--================================================================== -->
+	<!--=====  Type Definitions: OrderResponseType                           ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="OrderResponseType">
+		<xsd:sequence>
+			<xsd:element name="AgentParty" type="feram:AgentPartyType" minOccurs="0"/>
+			<xsd:element name="OrderResponseTradeLineItem" type="feram:OrderTradeLineItemType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--================================================================== -->
+	<!--=====  Type Definitions: OrderType                           ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="OrderType">
+		<xsd:sequence>
+			<xsd:element name="AgentParty" type="feram:AgentPartyType" minOccurs="0"/>
+			<xsd:element name="OrderTradeLineItem" type="feram:OrderTradeLineItemType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--================================================================== -->
+	<!--=====  Type Definitions: PutOrderMessage                         ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="PutOrderMessage">
+		<xsd:sequence>
+			<xsd:element name="Header">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="UserName" type="udt:TextType" minOccurs="0"/>
+						<xsd:element name="Password" type="udt:TextType" minOccurs="0"/>
+						<xsd:element name="MessageID" type="udt:IDType"/>
+						<xsd:element name="MessageDateTime" type="udt:DateTimeType"/>
+						<xsd:element name="MessageSerial" type="udt:NumericType"/>
+						<xsd:element name="ReferencedDocument" type="ram:ReferencedDocumentType" minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Body">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="PutOrderRequestDetails" type="osm:OrderType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--================================================================== -->
+	<!--=====  Type Definitions: PutOrderResponseMessage                           ===== -->
+	<!--================================================================== -->
+	<xsd:complexType name="PutOrderResponseMessage">
+		<xsd:sequence>
+			<xsd:element name="Body">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="PutOrderResponseDetails" type="osm:OrderAcknowledgementType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

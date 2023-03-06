@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =========================================================================== -->
+<!-- ===== Marketformcode - Code List Schema Module                                 ===== -->
+<!-- =========================================================================== -->
+<!--
+  	Schema agency:		Florecom
+	Schema version:		2.0
+	Schema date: 		   10 mei 2011
+
+	Code list name: 	Market Form
+	Code list agency: 	FEC	
+ 	Code list version:	2
+  	  	
+  	Copyright (C) Florecom (2011). All Rights Reserved.
+
+	Status codes for dutch floriculture use
+	
+	20110510 HvR
+	- Added codes 5,6,7,8,9 
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clmFECMarketForm20="urn:fc:florecom:xml:codelist:draft:MarketForm:2:0" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:fc:florecom:xml:codelist:draft:MarketForm:2:0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2:0">
+	<!-- =================================================================== -->
+	<!-- ===== Element Declarations                                    ===== -->
+	<!-- =================================================================== -->
+	<!-- ===== Root Element                                            ===== -->
+	<!-- =================================================================== -->
+	<xsd:element name="MarketFormCode" type="clmFECMarketForm20:MarketFormCodeContentType"/>
+	<!-- =================================================================== -->
+	<!-- ===== Type Definitions                                        ===== -->
+	<!-- =================================================================== -->
+	<!-- ===== Type Definition: MarketFormContent Type  ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="MarketFormCodeContentType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="001">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Committed</ccts:Name>
+						<ccts:Description>Committed supply for single buyer – pre negotiated price (e.g. contract price).</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="002">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Standard</ccts:Name>
+						<ccts:Description>Standard supply for one or a group of buyers – price made by seller.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="003">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Buffer</ccts:Name>
+						<ccts:Description>Buffer supply for one or a group of buyers – price made by seller – non sold product will be offered automatically for Clock supply.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="004">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Clock</ccts:Name>
+						<ccts:Description>Clock supply for all Clock buyers – price made by highest bid (dutch auction).</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="005">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Catalog</ccts:Name>
+						<ccts:Description>Catalog supply, price made biy seller</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="006">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Intermediation</ccts:Name>
+						<ccts:Description>Standard supply - price negotiated by intermediation</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="007">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Forward</ccts:Name>
+						<ccts:Description>Forward sales, pre negotiated price (e.g. contract price)</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="008">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Tender</ccts:Name>
+						<ccts:Description>Tender sales, price made by highest bid (auction)</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="009">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Contract</ccts:Name>
+						<ccts:Description>Contract sales, pre negotiated price (e.g. contract price)</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

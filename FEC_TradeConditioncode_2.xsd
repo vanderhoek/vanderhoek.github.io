@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 (http://www.altova.com) by Hans van Rossen (Agritect) -->
+<!-- =========================================================================== -->
+<!-- ===== TradeConditioncode - Code List Schema Module                                 ===== -->
+<!-- =========================================================================== -->
+<!--
+  	Schema agency:		Florecom
+	Schema version:		2.0
+	Schema date: 			7 mei 2012
+
+	Code list name: 	Trade Condition Code
+	Code list agency: 	FEC	
+ 	Code list version:	2
+  	  	
+  	Copyright (C) Florecom (2012). All Rights Reserved.
+
+	Condition codes for dutch floriculture use
+
+	20120507 HvR
+	- Added conditioncodes for CCVMP / Etrade / Connect
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clmFECTradeCondition20="urn:fc:florecom:xml:codelist:draft:TradeCondition:2:0" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:fc:florecom:xml:codelist:draft:TradeCondition:2:0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2:0">
+	<!-- =================================================================== -->
+	<!-- ===== Element Declarations                                    ===== -->
+	<!-- =================================================================== -->
+	<!-- ===== Root Element                                            ===== -->
+	<!-- =================================================================== -->
+	<xsd:element name="TradeConditionCode" type="clmFECTradeCondition20:TradeConditionCodeContentType"/>
+	<!-- =================================================================== -->
+	<!-- ===== Type Definitions                                        ===== -->
+	<!-- =================================================================== -->
+	<!-- ===== Type Definition: Trade Condition Code Content Type  ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="TradeConditionCodeContentType">
+		<xsd:restriction base="xsd:token">
+			<xsd:minLength value="3"/>
+			<xsd:maxLength value="3"/>
+			<xsd:enumeration value="300">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>TradePeriodMinimumDeliveryNumber</ccts:Name>
+						<ccts:Description>Minimum of delivery orders to be placed based on aggregate supply.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="301">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>TradeSubjectToAgreedConditions</ccts:Name>
+						<ccts:Description>There are agreed conditions between buyer and seller.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="302">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>MarketPlaceSupportsOrderAggregation</ccts:Name>
+						<ccts:Description>Marketplace supports the aggregation of multiple orders placed on the same supply item.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="303">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>MarketPlaceSupportsOrderCancelation</ccts:Name>
+						<ccts:Description>Marketplace supports the cancelation of orders within a specified timeframe</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="304">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>MarketPlaceSupportsSpotOrder</ccts:Name>
+						<ccts:Description>Marketplace supports the placing of spot orders where the remaining stock is ordered of the ordered item.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="305">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>TradeMinimum</ccts:Name>
+						<ccts:Description>Marketplace only accepts orders from customers with a specified minimum turnover.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="306">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementation guide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="307">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementation guide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="308">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementationguide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="309">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementation guide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="310">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementation guide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="311">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementation guide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="312">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementation guide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="313">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementation guide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="314">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>FutureUse</ccts:Name>
+						<ccts:Description>This condition is reserved for future use, refer to the marketplace implementation guide</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ZZZ">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>MutuallyDefined</ccts:Name>
+						<ccts:Description>Special condition mutually agreed between interchanging parties</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<!-- =================================================================== -->
+			<!-- ===== Florecom Definitions                                                                                              ==== -->
+			<!-- =================================================================== -->
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

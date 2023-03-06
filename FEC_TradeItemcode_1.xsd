@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 (http://www.altova.com) by Hans van Rossen (Agritect) -->
+<!-- =========================================================================== -->
+<!-- ===== TradeItemcode - Code List Schema Module                                 ===== -->
+<!-- =========================================================================== -->
+<!--
+  	Schema agency:		Florecom
+	Schema version:		1.0
+	Schema date: 		14 oktober 2008
+
+	Code list name: 	Trade Item Code
+	Code list agency: 	FEC	
+ 	Code list version:	1
+  	  	
+  	Copyright (C) Florecom (2008). All Rights Reserved.
+
+	Status codes for dutch floriculture use
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:clmFECTradeItem10="urn:fc:florecom:xml:codelist:draft:TradeItem:1:0" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:fc:florecom:xml:codelist:draft:TradeItem:1:0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2:0">
+	<!-- =================================================================== -->
+	<!-- ===== Element Declarations                                    ===== -->
+	<!-- =================================================================== -->
+	<!-- ===== Root Element                                            ===== -->
+	<!-- =================================================================== -->
+	<xsd:element name="TradeItemCode" type="clmFECTradeItem10:TradeItemCodeContentType"/>
+	<!-- =================================================================== -->
+	<!-- ===== Type Definitions                                        ===== -->
+	<!-- =================================================================== -->
+	<!-- ===== Type Definition: TradeItemCodeContent Type  ===== -->
+	<!-- =================================================================== -->
+	<xsd:simpleType name="TradeItemCodeContentType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="57">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Product</ccts:Name>
+						<ccts:Description>The item subject of trade is catogorised as Product.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="67">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Logistic</ccts:Name>
+						<ccts:Description>The item subject of trade is catogorised as Logistic Means.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="128">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Service</ccts:Name>
+						<ccts:Description>The item subject of trade is catogorised as Service.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="152">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						<ccts:Name>Hardware</ccts:Name>
+						<ccts:Description>The item subject of trade is catogorised as Hardware.</ccts:Description>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
